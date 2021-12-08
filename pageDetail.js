@@ -6,6 +6,12 @@
 async function nestedCall(){
 
     document.querySelector(".list-group").innerHTML = ''
+    
+    let heading = document.createElement("h4")
+    heading.textContent = "Book's Reviews"
+    document.querySelector(".list-group").appendChild(heading)
+
+    //<h4 id="bookHeading">Book's Reviews</h4>
 
     let bookName = localStorage.getItem("BookName");
 
